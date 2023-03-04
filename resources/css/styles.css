@@ -33,7 +33,7 @@ nav ul li{
     width: 1rem;
 }
 .banner{
-    background-image: url(/resources/images/banner-landingpage.jpg);
+    background-image: url(/fotomatic-web-development/resources/images/banner-landingpage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px; 
@@ -110,6 +110,7 @@ nav ul li{
     font-family: 'Roboto';
     font-weight: bold;
     line-height: 1.2;
+    margin-bottom: 1rem;
 }
 .feature h3{
     color: #4a4a4a;
@@ -182,9 +183,12 @@ footer .content{
 }
 @media only screen and (max-width: 768px){
     .mobile{
-        display: block; 
+        display: block;
     }
-    .desktop{
+    .mobile ul{
+        display: block;
+    }
+    .mobile li a img{
         display: none;
     }
     .mobile .button{
@@ -192,6 +196,19 @@ footer .content{
         color: white;
         padding: 5px;
         border-radius: 8px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .desktop ul a{
+        font-size: 0.8rem;
+    }
+    .desktop ul img{
+       width: 0.8rem;
+    }
+    #quotes-section .content{
+        margin-left: 5%;
+        margin-right: 5%;
     }
     #sign-up-cta{
         background-color: transparent;
@@ -218,5 +235,33 @@ footer .content{
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+}
+@media only screen and (max-width: 656px){
+    nav ul li {
+            margin-left: 1.5rem;
+    }
+}
+@media only screen and (max-width: 554px){
+    .desktop{
+        display: none;
+    }
+    header .content {
+        justify-content: center;
+    }
+    .mobile ul {
+        display: flex;
+    }
+    .mobile li a img{
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    nav{
+        display: flex;
+        /* margin */
+    }
+    nav ul li {
+        /* margin: 0; */
     }
 }
